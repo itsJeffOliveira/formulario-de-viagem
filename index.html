@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Caveat&display=swap" rel="stylesheet">
+        <title>Formulário de Viagem</title>
+    <body>
+      <header>
+        <h1 id="titulo">formulario de viagem</h1>
+        <p id="descricao">Reserve um tempo para preencher este formulário e nos contar <br> suas preferências enquanto viajantes.</p>
+      </header>
+
+      <main class="container">
+        <form action="" class="form">
+          <div class="input_dados">
+            <input type="text" name="nome" id="nome" class="input_user"required>
+            <label for="nome" class="label_input">Nome completo</label>
+          </div><br><br>
+          <div class="input_dados">
+            <input type="text" name="email" id="email" class="input_user" required>
+            <label for="email" class="label_input">E-mail</label>
+          </div><br><br>
+          <div class="input_dados">
+            <label for="idade">Data de nascimento:</label>
+            <input type="date" name="data_nascimento" id="data_nascimento" required>
+          </div><br><br>
+          <!-- <div class="input_dados">
+            <input type="number" name="idade" id="idade" class="input_user" placeholder="idade..." min="1" max="100" required>
+            <label for="idade">Idade</label>
+          </div> -->
+
+          <p>Qual seu tipo de viajante?</p><br>
+
+          <select name="rol" id="dropdown">
+            <option value="selecione" selected disabled>selecione...</option>
+            <option value="aventureiro">Aventureiro</option>
+            <option value="ecoturismo">Ecoturismo</option>
+            <option value="lazer">Lazer</option>
+            <option value="mochileiro">Mochileiro</option>
+            <!-- sempre deixar o valor da propriedade name igual -->
+          </select>
+          <p>Qual continente você gostaria de conhecer?</p><br>
+          <input type="checkbox" id="continente1" name="destino" value="asia" required>
+          <label for="asia">Asia</label><br>
+          <input type="checkbox" id="continente2" name="destino" value="europa" required>
+          <label for="europa">Europa</label><br>
+          <input type="checkbox" id="continente3" name="destino" value="africa" required>
+          <label for="africa">Africa</label><br>
+          <input type="checkbox" id="continente4" name="destino" value="america do norte" required>
+          <label for="america do norte">America do norte</label><br>
+          <input type="checkbox" id="continente5" name="destino" value="america do sul" required>
+          <label for="america do sul">America do sul</label><br>
+          <input type="checkbox" id="continente6" name="destino" value="oceania" required>
+          <label for="oceania">Oceania</label><br><br><br>
+
+          <div class="comentarios">
+            <p>Conte-nos sobre a experiência <br> de sua melhor viagem</p><br>
+            <textarea name="detalhes" id="detalhes" cols="30" rows="8"></textarea>
+          </div><br>
+
+          <button type="submit" id="submit">Enviar formulário</button>
+
+        </form>
+      </main>
+  
+    </body>
+  </head>
+
+</html>
